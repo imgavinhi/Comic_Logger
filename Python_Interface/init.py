@@ -82,13 +82,3 @@ def initialize_database(db_name, user, password, host, port="5432"):
             cursor.close()
             conn.close()
             print("PostgreSQL connection closed.")
-
-if __name__ == "__main__":
-    # --- IMPORTANT: Replace with your actual PostgreSQL credentials ---
-    name = "replace with user entry"
-    user = "replace with user entry"
-    password = "replace with user entry"
-    host = "replace with user entry" # e.g., "localhost" or an IP address
-    port = "5432" # Default PostgreSQL port
-
-    initialize_database(name, user, passowrd, host, port)
