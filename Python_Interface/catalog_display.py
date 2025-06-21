@@ -4,18 +4,18 @@ from os import system
 from init import initialize_database
 
 def main():
-  run = True
+  print("Here!")
   name = "Comic Catalog"
   user = input("User Name: ")
   password = input("Password: ")
   host = ("127.0.0.1")
   port = ("5432")
 
+  initialize_database(name, user, password, host, port)
+
+  run = True
   while run:
     system("clear")
-    #connect to database (maybe have multiple to select from in the future)
-    conn = pyscopg2.connect("dbname=repalce user=postgres")
-    curr = conn.cursor()
 
     print("********COMIC LOGGING CATALOG********\n")
     print("Please Select One of the Following Options")
